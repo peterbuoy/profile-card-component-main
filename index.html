@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Profile card component</title>
 
@@ -15,21 +16,40 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <!-- In retrospect, specific divs such as number of followers and likes
+  should have different ID's so they can be targeted with Javascript -->
+  <div class='profile-card'>
+    <div>
+      <img class='profile-img' src=".\images\image-victor.jpg" alt="profile picture">
+    </div>
+    <div>
+      Victor Crest
+      <span class='sub-text'>26</span> 
+    </div>
+    <div class='sub-text'>
+      London
+    </div>
+    <!-- what's the best way to make a line here? -->
+    <div class='break'></div>
+    <div class='user-stats'>
+      <div class='stat-col'>
+        <div>80k</div> 
+        <div class='sub-text'>Followers</div>
+      </div>
+      <div class='stat-col'>
+        <div>803k</div>
+        <div class='sub-text'>Likes</div>
+      </div>
+      <div class='stat-col'>
+        <div>1.4k</div>
+        <div class='sub-text'>Photos</div>
+      </div>
+    </div>
+  </div>
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/peterbuoy" target="_blank">Peter Bui</a>.
   </div>
 </body>
 </html>
