@@ -1,7 +1,8 @@
 body {
-  background-image: url('images/bg-pattern-bottom.svg'), url('images/bg-pattern-top.svg');
+  background: url('images/bg-pattern-bottom.svg') -50% 100% repeat, url('images/bg-pattern-top.svg') 100% -50% repeat, cornflowerblue;
+  background-size: 75%, 75%, auto;
   font-family:'monospace', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:  70%;
+  font-size: 70%;
 }
 
 .profile-img {
@@ -17,11 +18,11 @@ body {
   margin: auto;
   width: 200px;
   height: auto;
-  border: 1px solid #000;
   background-color: #FFF;
   border-radius: 0.5em;
   background: url('images/bg-pattern-card.svg') top no-repeat, #FFF bottom;
   background-size: 100%, 100%, auto;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .sub-text {
